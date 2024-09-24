@@ -1,0 +1,3393 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/072bff49d3ebbc7543f3796ca611a34f?family=RockoFLF');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+
+
+body{
+  background-image: url("../Banzil_Cudia_Crisostomo_DeGuzman_DelaCruz_Delgado_Macapagal_Manuel_Tienzo_Toledo-Final Requirement/Images/backgroundHome.png");
+
+}
+.wholeContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	  grid-template-rows: repeat(2, 100px);
+    height: 700px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 10;
+    margin-left: -10px;
+    font-weight: bolder;
+}
+.headerContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	  grid-template-rows: repeat(1, 80px);
+    padding: 10px;
+    font-family: 'Dosis', sans-serif;
+    align-items: center;
+}
+.flexButton{
+    display: flex;
+    width: 100%;
+}
+.firstContainer{
+    display: grid;
+
+}
+.buttonContainer{
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+	  grid-template-rows: repeat(1, 70px);
+    text-align: center;
+    align-items: center;
+
+}
+.iconContainer{
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    text-align: right;
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+}
+.logoPic{
+    width: 100px;
+    height: 70px;
+}
+.highlightedPage{
+    display: flex;
+    text-align: center;
+    width: 120px;
+    height: 68px;
+    color: red;
+    transition: all ease-in-out .2s;
+}
+.highlightedPage:hover{
+  border-bottom: 7px solid #d62626;
+}
+.homepageButton{
+  margin-left: 42px;
+  margin-top: 25px;
+}
+.productsButton{
+  margin-left: 26px;
+  margin-top: 25px;
+}
+.aboutButton{
+  margin-left: 37.5px;
+  margin-top: 25px;
+}
+.deliveryButton{
+  margin-top: 25px;
+  margin-left: 28.5px;
+}
+.contactButton{
+  margin-top: 25px;
+  margin-left: 21px;
+}
+.notHiglighted{
+  display: flex;
+  text-align: center;
+  width: 120px;
+  height: 68px;
+  color: #313130;
+  transition: all ease-in-out .2s;
+}
+.notHiglighted:hover{
+  border-bottom: 5px solid #d62626;
+}
+.userPlaceholder{
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+}
+.iconText{
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  text-align: left;
+}
+.secondContainer{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
+.imageSlidesContainer{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .imageSlides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .imageSlides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 100%;
+    height: 600px;
+  }
+  
+  /*css for manual slide navigation*/
+
+  .orderButton{
+    font-family: 'Arvo', serif;
+    position: absolute;
+    margin-top: 420px;
+    padding: 10px;
+    background-color: #313130;
+    color: white;
+    height: 100px;
+    width: 300px;
+    border: #313130;
+    border-radius: 10px;
+    margin-left: 100px;
+    font-size: 30px;
+  }
+  .orderButton:hover{
+    background-image: linear-gradient(to bottom,#29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 2px 4px 20px 0 rgba(45, 54, 65, 0.75);
+    cursor: pointer;
+}
+  .manualSlide{
+    position: absolute;
+    width: 800px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  .manualButton{
+    border: 2px solid #313130;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+  }
+  
+  .manualButton:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manualButton:hover{
+    background: #313130;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+    
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .autoSlide{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 560px;
+  }
+  
+  .autoSlide div{
+    border: 2px solid #313130;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    background-color: #f4f4f4;
+  }
+  
+  .autoSlide div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .autoSlide .automaticButton1{
+    background: #313130;
+  }
+  
+  #radio2:checked ~ .autoSlide .automaticButton2{
+    background: #313130;
+  }
+  
+  #radio3:checked ~ .autoSlide .automaticButton3{
+    background: #313130;
+  }
+  
+  #radio4:checked ~ .autoSlide .automaticButton4{
+    background: #313130;
+  }
+
+
+
+
+
+
+
+/* BEST SELLERS CSS */ 
+.bestSellers{
+    display:grid;
+    grid-template-columns: repeat(1 , 1fr);
+	  grid-template-rows: repeat(2, 150px);
+    height: 650px;
+}
+.bestText{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    padding: 20px;
+}
+hr{
+    margin-top: 10px;
+    border-top: 5px solid #d62626;
+}
+.bestContainer{
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+	  grid-template-rows: repeat(1, 150px);
+    height: 350px;
+}
+
+.buttonSellers{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: solid #d62626;
+    background: #d62626;
+    color: white;
+    margin-left: 90px;
+    margin-top: 100px;
+    transition: transform 0.3s ease;
+  }
+  
+.buttonSellers:hover{
+    transform: scale(1.2);
+  }
+ 
+  .insideButton{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 100px);
+  }
+  .buffaloPic{
+    margin-top: -120px;
+    height: 250px;
+    width: 350px;
+    border-radius: 100%;
+    margin-left: -30px;
+  }
+  .buffText{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    font-family: 'RockoFLF';
+    font-weight: bolder;
+  }
+.ratingYellow{
+    width: 150px;
+    margin-top: -20px;
+    margin-left: -45px;
+}
+.classificationContainer{
+    display: flex;
+    background-color: #ffbd59;
+    margin-top: 10px;
+    width: 170px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.textWings{
+    font-family: 'RockoFLF';
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #d62626;
+}
+
+
+
+/*START OF LOG IN CSS*/
+.containerOne{
+    display:grid;
+    grid-template-columns: repeat(2 , 1fr);
+	  grid-template-rows: repeat(1, 70px);
+}
+
+.redContainer{
+    display:grid;
+    grid-template-columns: repeat(1 , 1fr);
+	  grid-template-rows: repeat(3, 150px);
+    background-color: #d62626;
+    height: 769px;
+    margin-top: -10px;
+    margin-left: -10px;    
+}
+
+.websiteName{
+    color:white;
+    font-size: 140px;
+    font-family: 'RockoFLF';
+    margin-left: 70px;
+    margin-top: 80px;
+    font-weight: bolder;
+
+}
+
+.mottoContainer{
+    color:white;
+    font-size: 60px;
+    font-family: 'Dosis', sans-serif;
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 70px;
+
+}
+
+.pickupDelivery{
+    display:grid;
+    grid-template-columns: repeat(1 , 1fr);
+	grid-template-rows: repeat(3, 50px);
+    margin-top: 260px;
+    margin-left: 70px;
+
+}
+.availableFor{
+    font-family: 'RockoFLF';
+    color:white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.pickUp{
+    font-family: 'Dosis', sans-serif;
+    color:white;
+    font-size: 30px;
+
+}
+.deliveryText{
+    font-family: 'Dosis', sans-serif;
+    color:white;
+    font-size: 30px;
+    margin-top: -10px;
+}
+.whiteContainer{
+    display:grid;
+    margin: auto;
+    width: 90%;
+    margin-top: 150px;
+    grid-template-columns: repeat(1 , 1fr);
+	  grid-template-rows: repeat(5, 100px);
+    align-items: center;
+    
+}
+.loginContainer{
+    color: #d62626;
+    font-size: 50px;
+    font-family: 'RockoFLF';
+    font-weight: bolder;
+
+}
+.usernameContainer{
+
+    font-family: 'Dosis', sans-serif;
+    font-size: 38px;
+
+}
+.usernameInput{
+    background-color: #ffbd59;
+    width: 90%;
+    font-family: 'Dosis', sans-serif;
+    border: solid #ffbd59;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 38px;
+
+}
+.passwordContainer{
+    font-family: 'Dosis', sans-serif;
+    font-size: 38px;
+}
+.passwordInput{
+    background-color: #ffbd59;
+    width: 90%;
+    font-family: 'Dosis', sans-serif;
+    border: solid #ffbd59;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 38px;
+
+}
+.enterHompage{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    float: right;
+    margin-right: 30px;
+    background-color: #d62626;
+
+}
+.enterHompage:hover{
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+    cursor: pointer;
+}
+.loginText{
+    font-size: 20px;
+    font-family: 'RockoFLF';
+    color: white;
+}
+.accountSignup{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+	grid-template-rows: repeat(1, 50px);
+
+}
+.accountContainer{
+    color: #d62626;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 5px;
+}
+.signupContainer{
+    font-size: 20px;
+    text-decoration: none;
+}
+.signText{
+    color:#ffbd59;
+}
+
+/*REVIEWS */
+.mainPageReviewContainer{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 100px 300px 50px;
+  width: 500px;
+  height: 500px;
+  margin-left: 90px;
+  margin-top: -120px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.reviewTitleText{
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.reviewUserContainer{
+  display: grid;
+  grid-template-rows: 50px 50px 100px;
+  background-color:  #ffbd59;
+  border-radius: 5%;
+  width: 300px;
+  margin: auto;    
+  
+}
+
+.photoContainer{
+  border-radius: 50%;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+.userReviewImage{
+  border-radius: 50%;
+  border: 7px solid #ffbd59;
+  height: 100px;
+  margin-left: 90px;
+  margin-top: -50px;
+}
+
+.reviewFiveStars{
+  margin: auto;
+  margin-top: -35px;
+}
+
+.ratingRed{
+  width: 120px;
+}
+
+.reviewContent{
+  padding: 20px;
+  margin-top: -20px; 
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Arvo', serif;
+}
+
+.footerContainer{
+  display: grid;
+  grid-template-columns: 400px 300px 300px 200px;
+
+  background-color: #d62626;
+  width: 100%;
+  height: 11cm;
+  margin-top: -150px;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+  
+}
+
+.addressTextContainer{
+  display: grid;
+  grid-template-rows: 200px 200px; 
+  justify-content: center;
+}
+
+.footerLogo{
+  margin: auto;
+  margin-top: 40px;
+}
+.addressText{
+  display: grid;
+  grid-template-columns: 40px 250px;
+  grid-template-rows: 50px 50px 50px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: white;
+  font-family: 'RockoFLF';
+}
+
+.footerContacts{
+  margin: auto;
+}
+
+.contactsText{
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.footerContactImage{
+  margin:auto;
+  width: 30px;
+
+}
+
+.dreamTeamContainer{
+  display: grid;
+  grid-template-rows: 50px 150px 100px;
+  margin-top: 50px;
+  margin-left: -70px;
+}
+
+.dreamLogo{
+  margin: auto;
+  margin-top: 10px;
+  
+  
+}
+
+.poweredByText{
+  padding-left: 70px;
+  font-size: 15px;
+  color: white;
+  font-family: 'RockoFLF';
+}
+
+.teamNameText{
+  padding-left: 70px;
+  font-size: 15px;
+  color: white;
+  font-family: 'RockoFLF';
+}
+
+.contactsContainer{
+  display: grid;
+  grid-template-rows: 100px 60px 40px 60px; 
+
+}
+
+.socialMediaContainer{
+  display: grid;
+  grid-template-columns:  50px 50px 50px; 
+  column-gap: 1px;
+  
+}   
+
+.contactUsText{
+  font-size: 15px;
+  color: white;
+  font-family: 'RockoFLF';
+  margin-top: 50px;
+}
+
+.questionContainer{
+  display: grid; 
+  font-size: 15px;
+  color: white;
+  font-family: 'RockoFLF';
+}
+
+.questionText{
+  font-size: 15px;
+  color: white;
+  font-family: 'RockoFLF';
+}
+
+.questionButton{
+  padding: 8px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.questionButton:hover{
+  background-image: linear-gradient(360deg, #ee9617 0%, white 75%);
+  cursor: pointer;
+}
+
+.sendQuestion{
+  color: #d62626;
+  font-family: 'RockoFLF';
+  font-size: 17px;
+}
+
+
+ 
+.frequentLinksContainer{
+  display: grid;
+  grid-template-rows:  100px 50px 50px 50px 50px;
+}
+.siteLinksText{
+  font-size: 15px;
+  margin-top: 50px;
+  color: white;
+  font-family: 'RockoFLF';
+}
+
+.linksList{
+  font-size: 15px;
+  list-style: none;
+  font-family: 'RockoFLF';
+}
+
+.linksText{
+  color: white;
+}
+.linksText:hover{
+  color: #ffbd59;
+}
+
+a:hover{
+  color: #ffbd59;
+}
+
+.seeMoreButtonContainer{
+  width: 100%;
+  height: 100%;
+  
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+  background-color: white;
+  border: none;
+  margin-left: 250px;
+  margin-top: -100px;
+  cursor: pointer;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #d62626;
+  border-radius: 1.625rem;
+}
+.button-text{
+  display: none;
+  font-family: 'Arvo';
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #ffbd59;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #ffbd59;
+  border-right: 0.125rem solid #ffbd59;
+  transform: rotate(45deg);
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #ffbd59;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #ffbd59;
+  
+  display: block;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  width: 100px;
+  margin-left: 35px;
+  margin-top: -8px;
+  
+
+}
+
+
+
+
+/* REGISTRATION PAGE CSS */
+.registrationContainer{
+  display: grid;
+  grid-template-columns: 900px 450px;
+  height: 800px;
+  width: 100%;
+}
+
+.sideBarRed{
+  height: 900px;
+  width: 520px;
+  margin-top: -20px;
+  background-color: #d62626;
+  overflow: hidden;
+
+}
+
+.bonusSignup{
+  font-family: 'RockoFLF';
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  padding: 20px;
+  margin-top: 250px;
+  width: 250px;
+
+}
+
+.registrationFormContainer{
+  display: grid;
+  grid-template-rows: 150px 700px;
+  height: 800px;
+  padding: 30px;
+  
+}
+.registrationTitle{
+  height: 60%;
+  text-align: center;
+  font-family: 'RockoFLF';
+  font-weight: bold;
+  font-size: 40px;
+}
+
+  .textBeABaps{
+      color: #d62626;  
+  }
+
+  .textSignup{
+      color: #ffbd59;
+  }
+
+.formContainer{
+  background-color: #ffbd59;
+  height: 600px;
+  width: 80%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 0px;
+  padding: 10px;
+  column-gap: 5px;
+  justify-content: center;
+ 
+}
+
+.formCenter{
+  width: 100%;
+  grid-column: 1 / span 2;
+  height: 80px;
+}
+
+.formCenterPostalCode{
+  width: 100%;
+  grid-column: 1 / span 2;
+  height: 80px;
+  margin-top: -20px;
+}
+.formThreeColumns{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.formTwoColumns{
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 100px 100px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.formContent{
+  display: grid;
+  grid-template-rows: 50px 50px;
+  row-gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.labelForm{
+  font-size: 15px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bolder;
+  margin-top: -10px;
+  margin-left: 2px;
+}
+.inputForm{
+  margin-top: -57px;
+}
+.inputBox{
+  font-size: 15px;
+  padding: 7px;
+  width: 280px;
+  padding: 7px;
+  font-size: 15px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bolder;
+}
+.inputBox::placeholder{
+  font-weight: lighter;
+}
+
+.inputBoxName{
+  padding: 7px;
+  width: 180px;
+  font-size: 15px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bolder;
+}
+.inputBoxName::placeholder{
+  font-weight: lighter;
+}
+.showPassword{
+  margin-bottom: 80px;
+  margin-right: 140px;
+  width: 150px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bolder;
+  font-size: 13px;
+}
+.submitContainer{
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.buttonRegistrationSubmit{
+  width: 100px;
+  font-size: 10px;
+  padding: 10px;
+  margin-left: -300px;
+  background-color: #d62626;
+  font-family: 'RockoFLF';
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.buttonRegistrationSubmit:hover{
+  background-color: #ee9617;
+  background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  cursor: pointer;
+  }
+input.inputBox::-webkit-outer-spin-button,
+input.inputBox::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input.inputBox[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+/* MENU WEBPAGE */
+
+.menuContainer{
+  display: grid;
+  grid-template-columns: repeat(1, fr);
+  grid-template-rows: repeat(2, 100px);
+}
+.managersChoice{
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  padding: 10px;
+  
+}
+.managersChoice hr{
+  margin-bottom: 10px;
+  border-top: 5px solid #d62626;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*KUNG ILANG div*/
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 40%;
+  margin-left: 60px;
+  column-gap: 100px;
+  margin-top: 50px;
+  height: 500px;
+ }
+ .wrapper section {
+  width: 40%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  
+  height: 400px;
+  align-items: center;
+ }
+ .wrapper section .item {
+  padding: 0 1px;
+  transition: 250ms all;
+ }
+ .wrapper div .item:hover {
+  color: #d62626;
+
+ }
+ .wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+ }
+ .wrapper section a:nth-of-type(1) {
+  left: 0;
+  color: black;
+  background-color: transparent;
+ }
+ .wrapper section a:nth-of-type(2) {
+  margin-left: 450px;
+  color: black;
+  background-color: transparent;
+ }
+ @media only screen and (max-width: 600px) {
+  a.arrow__btn {
+  display: none;
+  }
+ }
+ 
+ .buttonSellers1{
+  width: 370px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+  margin-left: 80px;
+  margin-top: 100px;
+
+}
+.buttonSellers2{
+  width: 370px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+
+  margin-top: 100px;
+
+}
+.buttonSellers3{
+  width: 370px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+  margin-top: 100px;
+
+}
+.managerImaginaryLeft{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #d62626;
+  position: absolute;
+  margin-top: -800px;
+}
+.managerImaginaryRight{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #d62626;
+  position: absolute;
+  margin-left: 450px;
+  margin-top: -800px;
+}
+
+
+.buffaloPicture{
+  margin-top: -50px;
+  height: 200px;
+  width: 250px;
+  border-radius: 100%;
+  margin-right: -220px;
+}
+.buffalotext{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 50px;
+  margin-top: -90px;
+  margin-left: 20px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+}
+.priceContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 20px);
+}
+.tablePrice{
+  margin-top: -110px;
+  height: 10px;
+  text-align: left;
+  margin-left: 20px;
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  border-spacing: 0px;
+
+}
+
+.priceDisplay{
+  font-size: 18px;
+  color: #f4f4f4;
+  
+}
+.pieceDisplay{
+  font-size: 10px;
+  color: #ffbd59;
+  margin-left: 20px;
+}
+.trialContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1450px);
+  grid-template-rows: repeat(1, 500px);
+}
+.trialManager{
+  display: flex;
+  width: 650px;
+  height: 300px;
+  margin-left: -800px;
+  margin-top: 100px;
+  border-radius: 30px;
+  background-color: #ffbd59;
+  align-items: center;
+}
+.managerchoiceText{
+  font-size: 90px;
+  margin-left: 30px;
+  color: #d62626;
+  font-family: 'Arvo';
+  font-weight: bolder;
+  text-shadow: 2px 3px #313130;
+}
+.choiceTextMan{
+  font-size: 80px;
+  margin-left: 30px;
+  color: #d62626;
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  text-shadow: 2px 3px #313130;
+}
+.mightyWings{
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  padding: 10px;
+  margin-top: -130px;
+}
+.mightyWings hr{
+  margin-bottom: 10px;
+}
+.mightyWingsContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1400px);
+  grid-template-rows: repeat(1, 500px);
+  margin-top: -150px;
+}
+
+.wrapperMighty {
+  display: grid;
+  grid-template-columns: repeat(3, 100%); /*KUNG ILANG div*/
+  overflow: hidden;
+  scroll-behavior: smooth;
+  height: 400px;
+ }
+ .wrapperMighty section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin: 1px 0;
+  height: 400px;
+  align-items: center;
+ }
+ .wrapperMighty section .item {
+  padding: 0 1px;
+  transition: 250ms all;
+ }
+ .wrapperMighty section .item:hover {
+  margin: 0 20px;
+  transform: scale(1.2);
+ }
+ .wrapperMighty section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+ }
+ .wrapperMighty section a:nth-of-type(1) {
+
+  left: 0;
+  color: black;
+  background-color: transparent;
+ }
+ .wrapperMighty section a:nth-of-type(2) {
+  right: 0;
+  color: black;
+  background-color: transparent;
+ }
+ @media only screen and (max-width: 600px) {
+  a.arrowMighty {
+  display: none;
+  }
+ }
+ 
+ .buttonMightyOne{
+  width: 350px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+  margin-left: 80px;
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+.buttonMightyTwo{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+.buttonMightyThree{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+  margin-right: 60px;
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+
+.mightyPicture{
+  margin-top: -120px;
+  height: 200px;
+  width: 250px;
+  border-radius: 100%;
+  margin-right: -220px;
+}
+.garlicParmesanText{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 50px;
+  margin-top: -130px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+}
+.mightyPriceContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 20px);
+}
+.parmesanTable{
+  margin-top: 2px;
+  height: 10px;
+  text-align: left;
+  margin-left: 20px;
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  border-spacing: 0px;
+  line-height: 1;
+}
+.parmesanPrice{
+  font-size: 20px;
+}
+.parmesanPiece{
+  color: #ffbd59;
+  font-size: 10px;
+}
+.sectionLeftImaginary{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 1;
+  position: absolute;
+  margin-top: -650px;
+}
+.sectionRightImaginary{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 1;
+  position: absolute;
+  margin-top: -650px;
+  margin-left: 1300px;
+}
+
+
+.onePriceDisplay{
+  font-size: 23px;
+  color: #f4f4f4;
+}
+.onePieceDisplay{
+  font-size: 13px;
+  color: #ffbd59;
+  
+}
+.oneTablePrice{
+  margin-top: -80px;
+  height: 10px;
+  text-align: left;
+  margin-left: 20px;
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  border-spacing: 0px;
+}
+.dynamiteText{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 35px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 50px;
+  margin-top: -70px;
+  margin-left: 10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+}
+.dynamiteTableManager{
+  margin-top: -100px;
+  height: 10px;
+  text-align: left;
+  margin-left: 10px;
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  border-spacing: 0px;
+}
+
+
+.butteredHoneyText{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 50px;
+  margin-top: -130px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+}
+
+.spicyBuffaloText{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 50px;
+  margin-top: -140px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+}
+.spicyLevel{
+  margin-top: 15px;
+  margin-left: -30px;
+  font-size: 20px;
+}
+.numberPieces{
+  font-size: 17px;
+}
+
+
+.wrapperLuxury {
+  display: grid;
+  grid-template-columns: repeat(4, 100%); /*KUNG ILANG div*/
+  overflow: hidden;
+  scroll-behavior: smooth;
+  height: 400px;
+ }
+ .wrapperLuxury section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  margin: 1px 0;
+  height: 400px;
+  align-items: center;
+ }
+ .wrapperLuxury section .item {
+  padding: 0 1px;
+  transition: 250ms all;
+ }
+ .wrapperLuxury section .item:hover {
+  margin: 0 20px;
+  transform: scale(1.2);
+ }
+ .wrapperLuxury section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+ }
+ .wrapperLuxury section a:nth-of-type(1) {
+
+  left: 0;
+  color: black;
+  background-color: transparent;
+ }
+ .wrapperLuxury section a:nth-of-type(2) {
+  right: 0;
+  color: black;
+  background-color: transparent;
+ }
+ @media only screen and (max-width: 600px) {
+  a.arrowLuxury {
+  display: none;
+  }
+ }
+
+ .starYellowLeft{
+  position: absolute;
+  width: 35px;
+  margin-left: -50px;
+  margin-top: 17px;
+ }
+ .starYellowRight{
+  position: absolute;
+  width: 35px;
+  margin-top: 17px;
+  margin-left: 13px;
+ }
+
+ .productsOrderNowButtonContainer{
+  width: 500px;
+  height: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+.productsOrderNowButton{
+
+  padding: 20px;
+  margin-top: -50px;
+
+  background-color: #d62626;
+  color: white;
+  font-family: 'Arvo';
+  font-size: 30px;
+  border: 3px solid #ffbd59;
+  border-radius: 10px;
+}
+
+.productsOrderNowButton:hover{
+  
+  width: 250px;
+  height: 100px;
+
+  background-color: white;
+  color: #d62626;
+  font-family: 'Arvo';
+  font-size: 30px;
+  border: 3px solid #ffbd59;
+  border-radius: 10px;
+}
+
+.spaceContainerMenu{
+  display: flex;
+  height: 400px;
+}
+
+
+ /* ABOUT US */
+ .aboutMainContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  width: 100vw;
+ }
+ .aboutUsContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 200px);
+  width: 100vw;
+  margin-left: -10px;
+  background-color: #d62626;
+  align-items: center;
+ }
+ .aboutUsText{
+  font-size: 110px;
+  font-family: 'Arvo';
+  color: #ffbd59;
+  font-weight: bolder;
+ }
+ .informationContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1,100px);
+ }
+ .whoWeAreContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 50px);
+ }
+ .textWhoFlex{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(2,90px);
+  background-color: #ffbd59;
+  height: 480px;
+  width: 600px;
+  margin-left: 50px;
+  margin-top: -100px;
+  font-weight: bold;
+
+  margin-top: -100px;
+ }
+ .whoWeText{
+  font-size: 70px;
+  font-family: 'Arvo';
+  color: #d62626;
+  margin-left: 20px;
+  font-weight: bolder;
+  margin-top: 20px;
+ }
+ .infoWhoDream{
+  text-align: justify;
+  color: #d62626;
+  font-size: 18px;
+  font-family: 'RockoFLF';
+  width: 500px;
+  margin-left: 50px;
+  margin-top: 20px;
+ }
+ .dreamPicture{
+  margin-top: 30px;
+  width: 650px;
+  height: 270px;
+  border-radius: 10px;
+ }
+ .bapsAbout{
+  margin-top: 900px;
+
+ }
+ .bapsaboutUsContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 200px);
+  width: 100vw;
+  margin-left: -10px;
+  background-color: #d62626;
+  align-items: center;
+ }
+ .bapsAboutUsText{
+  font-size: 110px;
+  font-family: 'Arvo';
+  color: #ffbd59;
+  font-weight: bolder;
+  margin-left: 60px;
+
+ }
+ .bapsInfoContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1,100px);
+ }
+ .bapsPicture{
+  width: 650px;
+  height: 270px;
+  margin-top: 30px;
+  margin-left: 50px;
+  border-radius: 10px;
+
+ }
+ .whatbapsFlex{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(2,90px);
+  background-color: #ffbd59;
+  height: 1150px;
+  width: 600px;
+  margin-left: 50px;
+  margin-top: -100px;
+  font-weight: bold;
+ }
+ .infoWhatBaps{
+  text-align: justify;
+  color: #d62626;
+  font-size: 18px;
+  font-family: 'RockoFLF';
+  width: 500px;
+  margin-left: 50px;
+  margin-top: 20px;
+ }
+ .spaceContainerAboutUs{
+  display: flex;
+  height: 1885px;
+}
+
+ .dynamitePicture{
+  margin-top: -180px;
+  height: 320px;
+  width: 250px;
+  border-radius: 100%;
+  margin-right: -220px;
+ }
+ .dynamiteTable{
+  margin-top: 15px;
+  height: 10px;
+  text-align: left;
+  margin-left: 20px;
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  border-spacing: 0px;
+  line-height: 1;
+}
+.dynamiteTitle{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 40px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  margin-top: -180px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+}
+.dynamitePrice{
+  font-size: 20px;
+
+}
+.dynamitePicture1{
+  margin-top: -180px;
+  height: 320px;
+  width: 250px;
+  border-radius: 100%;
+  margin-right: -220px;
+ }
+ .streetPicture{
+  margin-top: -160px;
+  height: 200px;
+  width: 300px;
+  border-radius: 100%;
+  margin-left: 110px;
+ }
+ .nameReview{
+  font-size: 20px;
+  color: black;
+  font-family: 'Arvo';
+ }
+ .streetText{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 50px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 50px;
+  margin-top: -110px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+ }
+ .streetTable{
+  margin-top: 15px;
+  height: 10px;
+  text-align: left;
+  margin-left: 20px;
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  border-spacing: 0px;
+  line-height: 1;
+ }
+ .streetText1{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 50px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 50px;
+  margin-top: -120px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+ }
+ .kikiamPicture{
+  margin-top: -150px;
+  height: 200px;
+  width: 250px;
+  border-radius: 100%;
+  margin-right: -220px;
+ }
+ .streetText2{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 60px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 50px;
+  margin-top: -100px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+ }
+ .tokwaPicture{
+  margin-top: -160px;
+  height: 200px;
+  width: 250px;
+  border-radius: 100%;
+  margin-right: -220px;
+ }
+ .hotdogPicture{
+  margin-top: -160px;
+  height: 200px;
+  width: 250px;
+  border-radius: 100%;
+  margin-right: -220px;
+ }
+ .streetText3{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 60px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 50px;
+  margin-top: -100px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+ }
+ .buttonTwoOnlyOne{
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+  margin-left: 200px;
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+.buttonTwoOnlyTwo{
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+.buttonThreeOnlyOne{
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+  margin-left: 450.5px;
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+.pictureTwoOnlyOne{
+  margin-top: -160px;
+  height: 200px;
+  width: 300px;
+  border-radius: 100%;
+  margin-left: 200px;
+}
+.pictureTwoOnlyTwo{
+  margin-top: -120px;
+  height: 200px;
+  width: 300px;
+  border-radius: 100%;
+  margin-left: 200px;
+}
+.streetText4{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 50px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 300px;
+  margin-top: -110px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+ }
+ .buttonStreetOne{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+  margin-left: 80px;
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+.buttonStreetTwo{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+.buttonStreetThree{
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+
+  margin-top: 100px;
+  transition: transform 0.3s ease;
+}
+.platterContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 200px);
+}
+.platterOne{
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+  margin-left: 170px;
+
+  transition: transform 0.3s ease;
+}
+.platterTwo{
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  margin-left: 20px;
+  border: solid #d62626;
+  background: #d62626;
+  color: white;
+  transition: transform 0.3s ease;
+}
+.platterPicOne{
+  margin-top: -190px;
+  height: 300px;
+  width: 400px;
+  border-radius: 100%;
+
+}
+.platterPicTwo{
+  margin-top: -220px;
+  height: 300px;
+  width: 400px;
+  border-radius: 100%;
+
+}
+.pictureTwoOnlyTwo{
+  margin-top: -120px;
+  height: 200px;
+  width: 300px;
+  border-radius: 100%;
+  margin-left: 200px;
+}
+.platterTextOne{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 50px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 500px;
+  margin-top: 0px;
+  margin-left:10px;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+ }
+ .platterTextTwo{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 50px;
+  color: #ffbd59;
+  font-family: 'Arvo';
+  width: 500px;
+  margin-top: 0px;
+  margin-left:50px;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 3px 3px #313130;
+  line-height: 1;
+ }
+ .platterTable{
+  margin-top: 30px;
+  height: 10px;
+  text-align: left;
+  margin-left: 40px;
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  border-spacing: 0px;
+  line-height: 1;
+  width: 420px;
+  align-items: center;
+ }
+ .platterPrice{
+  font-size: 20px;
+  
+}
+.platterPiece{
+  color: #ffbd59;
+  font-size: 10px;
+}
+.numberPlatter{
+  font-size: 17px;
+}
+.sizePlatter{
+  color: #ffbd59;
+  font-size: 35px;
+  font-family: 'Arvo';
+  text-shadow: 2px 2px #313130;
+}
+
+
+
+
+/* ORDER PAGE  */
+
+.mightyWingsOrderContainer{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(2, 100px);
+
+}
+.titleTextOrderPage{
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  padding: 10px;
+}
+
+.threeGridOrderPage{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 125px);
+  margin-left: 50px;
+  width: 1300px;
+}
+.toggleChoice {
+  width: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.orderItem{
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 100px 200px 100px;
+  align-items: center;
+  justify-content: center;
+  width: 410px;
+  background-color: white;
+  border: 9px ridge #d62626;
+  cursor: pointer;
+  transition: background 0.2s;
+  
+}
+.choiceInput {
+  position: absolute;
+  margin-top: 33px;
+  margin-left: 20px;
+  accent-color: #ffbd59;
+  outline: 5px inset white;
+ }
+ input.choiceInput{
+  width: 50px;
+  height: 50px;
+  
+ }
+.orderQuantity{
+  font-size: 12px;
+  font-family: 'Dosis';
+}
+ .checkboxOrderItem{
+  width: 45px;
+}
+.choiceInput:checked ~ .orderItem {
+  
+  color: white;
+  background-color: #d62626;
+  border: 5px solid #ffbd59;
+  cursor: pointer;
+}
+.imageOrderCustom{
+  width: 80px;
+  height: 80px;
+  margin-left: 70px;
+  
+}
+.imageOrderCustom2{
+  width: 80px;
+  height: 80px;
+  margin-left: 40px;
+  
+}
+.contentOrderItemContainer{
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 150px;
+  align-items: center;
+  margin-left: 30px;
+  
+}
+.contentOrderName{
+  font-family: 'Arvo';
+  font-size: 15px;
+  line-height: 18px;
+  margin-left: 25px;
+}
+  .contentOrderName2{
+    font-family: 'Arvo';
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 15px;
+  }
+  .pesosPerPiece{
+    font-family: 'RockoFLF';
+  }
+  .contentOrderQuantityText{
+      font-family: 'RockoFLF';
+      margin-left: 20px;
+  }
+
+.contentOrderQuantityInputBox{
+  width: 30px;
+}
+.piecesChoiceLabel{
+  font-family: 'Dosis';
+  font-weight: bolder; 
+}
+.piecesChoiceNumber{
+  width: 40px;
+}
+.piecesChoiceContainer{
+  margin-left: -50px;
+  width: 150px;
+}
+.piecesChoiceContainer2{
+  margin-left: -50px;
+  width: 200px;
+}
+.luxuryOrderPageContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 100px);
+  margin-top: 350px;
+}
+.threeGridOrderPageluxury{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 125px);
+  margin-left: 50px;
+  width: 1300px;
+}
+.otherFoodItemsOrderContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  margin-top: 550px;
+}
+.twoGridOrderPage{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 125px);
+  margin-left: 150px;
+  width: 1100px;
+}
+.platterOrderContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  margin-top: 300px;
+
+}
+.orderItemTwo{
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 100px 200px 100px;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  background-color: white;
+  border: 9px ridge #d62626;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+
+.piecesChoiceContainer{
+  margin-left: -50px;
+  width: 150px;
+}
+.piecesChoiceLabelFlavoredRice{
+  font-family: 'Dosis';
+  font-weight: bolder; 
+  
+}
+.piecesChoiceNumberFlavoredRice{
+  width: 40px;
+}
+
+.pesosPerPieceFlavoredRice{
+  font-family: 'RockoFLF';
+}
+
+.piecesChoiceNumber{
+  width: 40px;
+  height: 8.5px;
+}
+
+
+.logisticsContainer{
+  display: grid;
+  grid-template-rows: 350px 350px 200px;
+  grid-template-columns: 500px 500px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  
+}
+
+.recipientNameContainer{
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-columns: 350px ;
+  align-items: center;
+  margin-left: 10px;
+
+  height: 250px;
+  background-color: #d62626;
+  color: white;
+  margin: auto;
+  border-radius: 5px;
+  padding: 20px;
+
+  font-family: 'RockoFLF';
+  font-size: 20px;
+  margin: auto;
+}
+
+.recipientNameInput{
+  width: 290px;
+  height: 25px;
+  margin-left: 28px;
+}
+
+.contactNumberDeliveryInput{
+  width: 290px;
+  height: 25px;
+  margin-left: 28px;
+}
+
+.contactNumberDeliveryContainer{
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-columns: 350px ;
+  align-items: center;
+  margin-left: 10px;
+
+  height: 250px;
+  background-color: #ffbd59;
+  color: black;
+  margin: auto;
+  border-radius: 5px;
+  padding: 20px;
+
+  font-family: 'RockoFLF';
+  font-size: 20px;
+
+  margin: auto;
+}
+
+.pickupReceiveContainer{
+  display: grid;
+  grid-template-rows: 40px 150px 50px;
+  grid-template-columns: 350px ;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+
+  height: 250px;
+  padding: 20px;
+  background-color:#ffbd59;
+  
+  margin: auto;
+  border-radius: 5px;
+ 
+}
+
+.deliverReceiveContainer{
+
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-columns: 350px ;
+  align-items: center;
+  margin-left: 10px;
+
+  height: 250px;
+  background-color: #d62626;
+  color: white;
+  margin: auto;
+  border-radius: 5px;
+  padding: 20px;
+
+  font-family: 'RockoFLF';
+  font-size: 20px;
+
+}
+
+.orderDeliveryLocationInput{
+  width: 290px;
+  height: 25px;
+  margin-left: 28px;
+}
+
+.storeLocationText{
+  font-family: 'Arvo';
+  font-size: 20px;
+}
+.submitButtonOrder{
+  width: 100%;
+  height: 50px;
+  margin-left: 600px;
+  
+  
+
+}
+.orderingSubmitOrder{
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  width: 200px;
+  height: 70px;
+
+  background-color: #d62626;
+  color: white;
+  border: 2px solid #ffbd59;
+  font-family: 'Arvo';
+}
+
+.orderingSubmitOrder:hover{
+  background-color: white;
+  color: #d62626;
+}
+
+.gmap_canvasTwo {
+  overflow:hidden;
+  background:none
+  !important;
+  height:300px;
+  width:300px;
+  margin-top: 20px;
+  }
+
+.mapouterTwo{
+  
+  text-align:right;
+  height:200px;
+  width:250px;
+
+}
+
+.submitOrderButtonContainer{
+  width: 100%;
+  height: 50px;
+ 
+}
+
+.orderingSubmitButton{
+  
+  margin: auto;
+
+  width: 200px;
+  height: 70px;
+
+  background-color: #d62626;
+  color: white;
+  border: 2px solid #ffbd59;
+  border-radius:  10px;
+  font-family: 'Arvo';
+
+  margin-left: 400px;
+}
+
+.orderingSubmitButton:hover{
+  background-color: white;
+  color: #d62626;
+  cursor: pointer;
+}
+
+/* ORDER SUMMARY */
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.headerContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(1, 80px);
+  padding: 10px;
+  font-family: 'Dosis', sans-serif;
+  align-items: center;
+}
+
+.buttonContainer{
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+grid-template-rows: repeat(1, 70px);
+  text-align: center;
+  align-items: center;
+}
+
+.iconContainer{
+  text-align: right;
+  margin-right: 50px;
+}
+
+.confirmationContainer{
+  color: #d62626;
+  font-size: 110px;
+  margin-left: 150px;
+  padding-bottom: 40px;
+  font-weight: bolder;
+  font-family: 'Arvo';
+}
+.submitContainerOrderSummary{
+  margin-top: 10px;
+  font-family: 'Arvo';
+  color: white;
+  background-color: #d62626;
+  font-size: 40px;
+  border: none;
+  border-radius: 15px;
+
+}
+.submitContainerOrderSummary:hover{
+  background-color: #ee9617;
+  background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  cursor: pointer;
+  }
+.tablesContainer{
+  background-color: white;
+  height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 1000px;
+
+}
+.seperateContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 85%;
+  margin: 50px auto;
+}
+
+.orderAndTotal{
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  
+
+}
+
+.orderName{
+  color: #d62626;
+}
+
+.lastRow{
+  color: #d62626;
+  padding-bottom: 100px;
+}
+.orderAndTotal table{
+  border: 6px solid #d62626;
+  font-size: 20px;
+  height: 200px;
+  min-width: 1000px;
+  margin-bottom: .5px auto;
+  margin-right: 10px auto;
+  word-spacing: 2px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-family: 'Arvo';
+
+}
+
+.orderAndTotal table td{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 7px;
+  padding-bottom: 15px;
+}
+
+.billBreakdown{
+  border-bottom:  6px solid #d62626;
+  border-left:  6px solid #d62626;
+  border-right:  6px solid #d62626;
+  border-top:  6px solid #d62626;
+  max-width: 988px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: 'Arvo';
+}
+
+.breakdownContainer{
+  font-size: 23px;
+  color: #d62626;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+
+.billContainer{
+  margin-left: 250px;
+  font-size: 23px;
+  color: #d62626;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.totalBillContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: 'Arvo';
+}
+
+.totalContainer{
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 30px;
+  color: #d62626;
+}
+
+.totalBill{
+  font-size: 30px;
+  margin-top: 30px;
+  color: #d62626;
+  margin-left: 250px;
+}
+
+.editContainer{
+  margin-left: 750px;
+  margin-top: 40px;
+  padding-top: 5px;
+  text-align: center;
+  padding-bottom: 5px;
+  background-color: rgb(255, 189, 89);
+  width: 150px;
+  color: #d62626;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 13px;
+}
+
+
+/* start of right side container */
+
+.paymentByContainer{
+  font-weight: bolder;
+  background-color: #ffbd59;
+  margin-left: -20px;
+  padding-top: 40px;
+  height: 100px;
+  padding-left: 20px;
+  border-radius: 15px;
+  font-family: 'Arvo';
+}
+
+.deliveryContainer{
+  font-weight: bolder;
+  background-color: #ffbd59;
+  border-radius: 15px;
+  margin-top: 10px;
+  height: 107px;
+  padding-left: 20px;
+  padding-top: 30px;
+  width: 230px;
+  font-family: 'Arvo';
+  margin-left: -20px;
+}
+
+.redDelivery{
+  color: #d62626;
+  padding-top: 15px;
+  font-size: 35px;
+}
+.addressConfirmation{
+  font-size: 15px;
+}
+.blankContainer{
+  background-color: #ffbd59;
+  margin-top: 10px;
+  margin-left: -20px;
+  border-radius: 15px;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 30px;
+  font-family: 'Arvo';
+}
+
+.submitRegistrationContainer{
+
+  color: white;
+  font-size: 45px;
+  font-weight: bolder;
+  border-radius: 15px;
+  height: 110px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: -30px;
+ 
+
+}
+
+/* ORDER CONFIRMATION PAGE */
+.receivedContainer{
+  margin-top: 100px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(4, 90px);
+	text-align: center;
+}
+.notedContainer{
+	font-size: 60px;
+    font-family: 'Arvo', serif;
+    padding: 20px;
+    font-weight: bold;
+    color: #d62626;
+}
+.prepareContainer{
+	font-size: 35px;
+    font-family: 'Arvo', serif;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffbd59;
+}
+.estimateContainer{
+	font-size: 35px;
+    font-family: 'Arvo', serif;
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+}
+.deliveredContainer{
+	padding: 10px;
+}
+.receiveButton{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    float: center;
+    background-color: #d62626;
+}
+.receiveButton:hover{
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+    cursor: pointer;
+    }
+.receiveText{
+	font-size: 30px;
+    font-family: 'Arvo';
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.spaceContainerConfirmation{
+  display: flex;
+  height: 200px;
+}
+.wholeContainerConfirmation{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 100px);
+  height: 700px;
+}
+
+/* THANK YOU PAGE */
+.thanksContainer{
+  margin-top: 100px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: 90px 50px 100px 50px 100px;
+	text-align: center;
+}
+.satisfyContainer{
+	font-size: 60px;
+    font-family: 'Arvo', serif;
+    padding: 20px;
+    font-weight: bold;
+    color: #d62626;
+}
+.satisfyTranslation{
+	font-size: 30px;
+    font-family: 'Arvo', serif;
+    color: gray;
+}
+.patronageContainer{
+	font-size: 35px;
+    font-family: 'Arvo', serif;
+    padding: 15px;
+    font-weight: bold;
+    color: #ffbd59;
+
+}
+.patronageTranslation{
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    color: gray;
+}
+.reviewContainer{
+	padding: 45px;
+}
+.reviewButton{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    float: center;
+    background-color: #d62626;
+}
+.reviewButton:hover{
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+    cursor: pointer;
+    }
+.reviewText{
+	font-size: 30px;
+    font-family: 'Arvo';
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.spaceContainerThankYou{
+  display: flex;
+  height: 200px;
+}
+
+
+/* CONTACT US */
+.threeContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 100px 140px 1fr;
+}
+.oneContainer{
+  display: grid;
+}
+.basicContactsContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #f5f5f5;
+  width: 100vw;
+}
+.contactsBox{
+  margin: auto;
+  margin-top: 10px;
+}
+.highlightText{
+  font-weight: bold;
+}
+.textBoxes{
+  font-family: Dosis;
+  font-size: 20px;
+  text-align: center;
+}
+.contactsImage{
+  margin: auto;
+  height: 50px;
+}
+.headerQuestions{
+  font-size: 90px;
+  height: 60px;
+  text-align: center;
+  font-family: 'Arvo';
+  line-height: 0;
+}
+.headerContainerContact{
+  text-align: center;
+  margin-top: 55px;
+}
+.contentBox{
+  margin: auto;
+  position: relative;
+  font-size: 20px;
+  height: 350px;
+  color: #d62626;
+  display: grid;
+  grid-template-columns: 650px 220px 500px;
+  grid-template-rows: 30px 1fr 30px;
+  border-width: 5px;
+  padding-top: 0;
+  padding-bottom: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 100px;
+}
+.sendUsQuestions{
+  font-size: 40px;
+  font-family: 'Dosis';
+
+}
+.reviewBox{
+  background-color: #ffbd59;
+  display: grid;
+  grid-template-columns: 120px 300px;
+  grid-template-rows: repeat(3, 50px);
+  width: 600px;
+  height: 250px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #ffbd59;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+.submitAReview{
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+.textBoxName{
+  border-radius: 5px;
+  font-family: 'Dosis';
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  padding: 7px;
+  width: 450px;
+}
+.textBoxName::placeholder{
+  font-weight: lighter;
+}
+.messagePlaceholder{
+  font-family: 'Arvo';
+  font-weight: lighter;
+  color: #d62626;
+}
+.textBoxEmail{
+  border-radius: 5px;
+  font-family: 'Dosis';
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  padding: 7px;
+  width: 450px;
+}
+.textBoxEmail::placeholder{
+  font-weight: lighter;
+}
+.textBoxReview{
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  height: 130px;
+  padding: 7px;
+  margin-top: 100px;
+  width: 450px;
+  font-family: 'Dosis';
+  font-weight: Bolder;
+}
+
+textarea{
+  resize: none;
+}
+textarea::placeholder{
+  font-weight: lighter;
+}
+.messageSubmit{
+  text-align: right;
+  padding: 5px;
+}
+.submitButton{
+  background-color: #d62626;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+.submitButton:hover{
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+    cursor: pointer;
+}
+.submitText{
+  font-size: 20px;
+  font-family: 'Arvo';
+  color: white;
+  padding: 5px;
+}
+.proceedContainer{
+  text-align: left;
+  padding: 5px;
+  margin-left: 72.9025px;
+}
+.contactUsTextContactWeb{
+  font-family: 'RockoFLF';
+  font-size: 30px;
+  font-weight: bolder;
+}
+.iconBox{
+  display: grid;
+  grid-template-columns: 50px 500px;
+  grid-template-rows: repeat(3, 70px);
+  align-items: center;
+  column-gap: 10px;
+  height: 200;
+  width: 125px;
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: 'Arvo';
+  font-weight: bolder;
+}
+.reviewPartition{
+  float: left;
+  text-align: center;
+  font-family: 'RockoFLF';
+  font-weight: bolder;
+  font-size: 30px;
+}
+.iconImage{
+  height: 50px;
+  width: 50px;
+}
+
+.spaceContainerContact{
+  display: flex;
+  height: 70px;
+}
+
+.reviewSubmitReviewContainer{
+  display: grid;
+  grid-template-columns: 500px;
+  grid-template-rows: 10px 100px 500px 70px;
+  align-items: center;
+  justify-content: center;
+
+  
+
+}
+
+.reviewSubmitText{
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.reviewSubmitTextTitle{
+  font-family: 'Arvo';
+  font-size: 40px;
+}
+
+.reviewSubmitTextSubtitletitle{
+  font-family: 'Arvo';
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+.reviewSubmitContent{
+  display: grid;
+  margin-top: 150px;
+  grid-template-columns: 150px 350px;
+  grid-template-rows: 100px 100px 260px;
+ 
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffbd59;
+  border-radius: 10px;
+}
+
+.reviewSubmitName{
+  padding: 20px;
+}
+.reviewName{
+  font-family: 'Arvo';
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 20px;
+}
+
+.reviewNameInputBox{
+  width: 300px;
+  height: 30px;
+  
+  
+  
+}
+
+.reviewRating{
+  font-family: 'Arvo';
+  font-size: 20px;
+  font-weight: lighter;  
+  padding: 20px;
+}
+
+
+
+
+.textReview{
+  font-family: 'Arvo';
+  font-size: 20px;  
+  padding: 20px;
+  margin-top: -120px;
+
+}
+
+
+textarea {
+  width: 300px;
+  height: 150px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ 
+}
+
+.submitReviewSubmitButton{
+  background-color: #d62626;
+  color: white;
+  border: 2px solid #ffbd59;
+  font-family: 'Arvo';
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.submitReviewSubmitButton:hover{
+  background-color: #ffbd59;
+  color: black;
+  border: 2px solid #d62626;
+
+  font-family: 'Arvo';
+}
+
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100px;
+  margin-left: 50px;
+  }
+  
+  .rating > input{
+   display:none;
+  }
+  
+  .rating > label {
+  position: relative;
+  width: 300px;
+  font-size: 15vw;
+  color: #d62626;
+  cursor: pointer;
+  font-size: 50px;
+  
+  }
+  
+  .rating > label::before{
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+  font-size: 50px;
+  
+  }
+  
+  .rating > label:hover:before,
+  .rating > label:hover ~ label:before {
+  opacity: 1 !important;
+  font-size: 50px;
+  }
+  
+  .rating > input:checked ~ label:before{
+  opacity:1;
+  font-size: 50px;
+  }
+  
+  .rating:hover > input:checked ~ label:before{ 
+  opacity: 0.4;
+  font-size: 50px;
+   }
+
+.spaceContainerReview{
+  display: flex;
+  height: 100px;
+}
+
+
+/*  PROFILE CSS   */
+.profileContainer{
+	display: grid;
+	grid-template-columns: 280px 195px 700px;
+	grid-template-rows: 70px 320px 100px;
+	text-align: left;
+	justify-content: center;
+}
+.profileHeader{
+	font-size: 60px;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    color: #d62626;
+}
+.imageEdit{
+	display: grid;
+	grid-template-rows: 240px 80px;
+}
+.imageContainer{
+	margin: auto;
+}
+.profileImage{
+	height: 200px;
+  border: 4px solid;
+  border-color: #d62626;
+  margin: auto;
+  border-radius: 100%;
+}
+.containerEdit{
+	margin-left: auto;
+	margin-right: auto;
+}
+.editButton{
+	padding: 5px;
+    border: none;
+    border-radius: 5px;
+    float: center;
+    background-color: #d62626;
+}
+.editButton:hover{
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+    cursor: pointer;
+ }
+.editText{
+	font-size: 20px;
+    font-family: 'Arvo';
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+.basicInformation{
+	display: grid;
+	padding: 20px;
+	font-family: 'Arvo';
+	font-size: 20px;
+	font-weight: bold;
+	color: #d62626;
+	grid-template-rows: repeat(4, 1fr);
+	background-color: #ffbd59;
+	border-radius: 10px;
+	text-align: left;
+}
+.personalInformation{
+	display: grid;
+	text-align: left;
+	grid-template-rows: repeat(4, 1fr);
+	font-size: 20px;
+	font-family: 'Arvo';
+	padding: 20px;
+	border: solid black 1px;
+	border-radius: 10px;
+  background-color: white;
+
+}
+.logoutDeleteContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+	margin-top: 10px;
+}
+.logoutContainer{
+  text-align: right;
+}
+.deleteContainer{
+  text-align: left;
+}
+
+.logoutButton{
+	padding: 10px;
+    border: none;
+    border-radius: 10px;
+    float: center;
+    background-color: #d62626;
+}
+.logoutButton:hover{
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+    cursor: pointer;
+    }
+.logoutText{
+	font-size: 30px;
+    font-family: 'Arvo';
+    color: white;
+    font-weight: bold;
+}
+
+.spaceContainerProfile{
+  display: flex;
+  height: 450px;
+}
+
+/*     DELIVERY AND PAYMENT     */
+
+.deliveryAndPaymentMainContainer{
+  height: 1000px;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 100px 400px;
+  grid-template-columns: 1200px;
+  align-items: center;
+  justify-content: center;
+
+ 
+}
+
+.deliveryAndPaymentTitleText{
+  width: 100%;
+  height: 100%;
+
+  font-family: 'RockoFLF';
+  font-size: 50px;
+
+
+}
+
+.deliveryAndPaymentContent{
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 400px;
+  grid-template-columns: 350px 350px 350px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+
+ 
+}
+
+.deliveryChargeContainer{
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 80px 80px 80px 80px;
+  grid-template-columns: 350px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+  .headingDeliveryCharge{
+      font-family: 'RockoFLF';
+      font-size: 30px;
+
+  }
+  .subheadingDeliveryCharge{
+      font-family: 'RockoFLF';
+      font-size: 15px;
+  }
+
+.locationDeliveryCharge{
+  width: 100%;
+  height: 20px;
+
+  display: grid;
+  grid-template-columns: 220px 100px;
+  grid-template-rows: 20px;
+  align-items: center;
+  justify-content: center;
+
+ 
+}
+  .locationDelivery{
+      height: 30px;
+      width: 190px;
+      
+      font-family: 'RockoFLF';
+      font-size: 20px;
+      font-weight: bold;
+
+      padding: 10px;
+      background-color: #ffbd59;
+      border-radius: 10px;
+      
+  }
+
+  .priceDelivery{
+      height: 30px;
+      width: 70px;
+      
+      font-family: 'RockoFLF';
+      font-size: 20px;
+
+      color: white;
+
+      padding: 10px;
+      background-color: #d62626;
+      border-radius: 10px;
+      text-align: center;
+  }
+
+.paymentMethodContainer{
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 80px 200px;
+  grid-template-columns: 350px;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.pickupContainer{
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 80px 300px;
+  grid-template-columns: 350px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #d62626;
+  padding: 10px;
+  border-radius: 5px; 
+}
+
+
+.paymentLogosContainer{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100px 300px;
+  grid-template-rows: repeat(3, 110px);
+  place-items: center;
+  border-radius: 5px;
+  text-align: left;
+}
+.logosContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 90px);
+  grid-template-rows: repeat(1, 90px);
+  background-color: #f5f5f5;
+  border: groove;
+  border-radius: 10px;
+}
+
+.paymentText{
+  display: grid;
+  background-color: #d62626;
+  color: white;
+  font-family: 'RockoFLF'; 
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-right: 100px;
+}
+
+.codBDO{
+  width: 70px;
+  margin: auto;
+}
+
+.gcashPaymaya{
+  width: 90px;
+  margin: auto;
+}
+ 
+
+.pickupText{
+  color: white;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none
+  !important;
+  height:300px;
+  width:300px;
+  }
+
+.mapouter{
+  border: 2px solid #d62626;
+  text-align:right;
+  height:300px;
+  width:300px;
+  }
+
+.spaceContainerDelivery{
+  display: flex;
+  height: 500px;
+}
+.yellowStar{
+  height: 10px;
+  width: 10px;
+}
+.spaceContainerOrderPage{
+  display: flex;
+  height: 1000px;
+}
